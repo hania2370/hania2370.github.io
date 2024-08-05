@@ -1,0 +1,209 @@
+body{
+    font-family: "Heebo", sans-serif;
+    font-weight: 400;
+    padding-bottom: 5%;
+}
+a{
+    text-decoration:none;
+}
+
+/*navbar styles start*/
+a.navbar-link{
+    color: black;
+    font-size: 1.25rem;
+}
+
+div#navbar-div{
+    display:none;
+    justify-content: flex-end;
+    column-gap: 1.25rem;
+    padding: 0.5rem 1rem;
+    font-weight: 650;
+}
+/*navbar styles end*/
+
+/*backdrop styles start*/
+
+div#backdrop{ /*flex-container*/
+    display: flex;
+    flex-direction: column-reverse;
+    justify-content: space-around;
+    column-gap: 1.25rem;
+    padding: 3% 8%;
+    margin-top: 4%;
+    text-align: center;
+}
+img.dp{
+    width: 13rem;
+    height:auto;
+}
+/*backdrop left col styles start*/
+
+/*only want widths to be more specified*/
+div#backdrop-left-column{
+    width: 90%;
+}
+div#backdrop-left-column>h1{
+    font-weight:700;
+    font-size: 2rem;
+    color: #21243D;
+}
+div#backdrop-left-column>p{
+    font-weight:400;
+    font-size: 1rem;
+    color: #21243D;
+}
+button#backdrop-left-button{
+    background-color: #FF6464;
+    color: white;
+    font-weight:500;
+    font-size: 1rem;
+    padding: 0.75rem 1.25rem;
+}        
+/*backdrop left col styles end*/
+
+div#backdrop-right-column{
+    width: 100%;
+    text-align: center;
+}
+/*backdrop styles end*/
+
+/*recent blog style starts*/
+#recent-blog-posts-section{
+    background-color: #EDF7FA;
+    padding: 1.5% 2%;
+}
+#recent-posts-header{
+    display:flex;
+    justify-content: space-between;
+}
+.my-h4{
+    margin:0;
+    font-weight: 400;
+    font-size: 1rem;
+    color:#21243D;
+}
+#card-container{
+    display:flex;
+    row-gap: 30px;
+    flex-direction: column;
+}
+div.card{
+    color:#21243D;
+    background-color: white;
+    font-weight: 400;
+    border-radius: 0.5rem;
+    padding: 1.5rem 1.75rem;
+}
+h2.my-h2{
+    color:#21243D;
+    font-weight: 650;
+    font-size: 1.5rem;
+}
+div.card > span{
+    font-size: 1.025rem;
+    padding: 0.1% 0.5%;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+div.card > p{
+    font-size: 1rem;
+}
+/*recent blog style ends*/
+
+/*featured work section starts*/
+section.featured-works{
+    background-color: #EDF7FA;
+    padding: 5% 8%;
+    margin-top: 3%;
+    display: flex;
+    flex-direction: column;
+    row-gap: 0.75rem;
+}
+div.horizontal-card{
+    display:flex;
+    row-gap:3%;
+    flex-direction: column;
+}
+span.pill{
+    color:white;
+    background-color: #142850;
+    padding: 0.1rem 1rem;
+    border-radius: 1rem;
+    font-weight: 650;
+    font-size: 1rem;
+}
+span.secondary-text{
+    margin-left: 1rem;
+    color: #8695A4;
+    font-size: 1.20rem;
+}
+div.horizontal-card > div > p{
+    color: #21243D;
+    font-size: 1rem;
+}
+div.horizontal-card > img{
+    border-radius: 0.4rem;
+}
+/*featured work section ends*/
+
+/*social media links section starts*/
+#social-media-links-section{
+    display:flex;
+    text-align: center;
+    font-size: 1.5rem;
+    column-gap: 0.75rem;
+    justify-content: center;
+    align-items: baseline;
+    padding-top:4%;
+}
+#social-media-links-section > a{
+    color:#142850;
+}
+/*social media links section ends*/
+
+/*media screen query starts*/
+@media screen and (min-width:500px) {
+    div#backdrop{
+        flex-direction: row;
+        text-align: left;
+    }
+
+    div#backdrop-left-column{
+        width:50%;
+    }
+    div#backdrop-left-column>h1{
+        font-size: 2.5rem;
+        color: #21243D;
+    }
+
+    img.dp{
+        width: 19rem;
+        height:auto;
+    }
+
+    div#backdrop-right-column{
+        width: 45%;
+        text-align: center;
+    }
+
+    div#navbar-div{
+        display:flex;
+    }
+    
+    #card-container{
+        flex-direction: row;
+        column-gap: 1%;
+    }
+
+    #recent-blog-posts-section{
+        padding: 1.5% 8%;
+    }
+
+    div.horizontal-card{
+        display:flex;
+        column-gap:20px;
+        flex-direction: row;
+    }
+}
+/*media screen query ends*/
